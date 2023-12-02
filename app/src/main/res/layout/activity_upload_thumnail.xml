@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".UploadThumnailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Choose Movies Type:"
+            android:layout_marginBottom="5dp"/>
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:textColor="@color/colorAccent"
+                android:id="@+id/radionnoselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No Type" />
+            <RadioButton
+                android:textColor="@color/colorAccent"
+                android:id="@+id/radiolatestmovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latest movies"
+                />
+            <RadioButton
+                android:textColor="@color/colorAccent"
+                android:id="@+id/radiopopularmovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best popular movies" />
+
+            <RadioButton
+                android:textColor="@color/colorAccent"
+                android:id="@+id/seriemovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serie" />
+
+            <RadioButton
+                android:textColor="@color/colorAccent"
+                android:id="@+id/radioSlidermovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide movies" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="showFileChooser"
+                android:text="@string/upload_thumnail"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtViewthumSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/no_thumnail_selected"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonupload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="uploadfileToFirebase"
+            android:text="@string/upload1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

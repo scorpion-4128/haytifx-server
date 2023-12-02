@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "491813804792",
+    "firebase_url": "https://haytifx-beta-default-rtdb.firebaseio.com",
+    "project_id": "haytifx-beta",
+    "storage_bucket": "haytifx-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491813804792:android:1b618888ed60370bcef90d",
+        "android_client_info": {
+          "package_name": "com.home.movieappserver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWpR9PnGnCw8z7EmjNV1BNHZ6Kp4OoQgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491813804792:android:0487d04054ee4bdacef90d",
+        "android_client_info": {
+          "package_name": "com.home.movieappserverside"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWpR9PnGnCw8z7EmjNV1BNHZ6Kp4OoQgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

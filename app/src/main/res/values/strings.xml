@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HAYTIFX server</string>
+    <string name="choose_movies_category">Choose Movies Category:</string>
+    <string name="upload_video">upload video</string>
+    <string name="no_video_selected">no video selected</string>
+    <string name="movies_description">Movies Description</string>
+    <string name="upload">UPLOAD</string>
+    <string name="welcome_emmanuel_le_pdg">Welcome ADMIN Emmanuel!</string>
+    <string name="no_thumnail_selected">no thumnail selected</string>
+    <string name="upload_thumnail">upload Thumnail</string>
+    <string name="upload1">UPLOAD</string>
+    <string name="pa_gen_videyo_ki_seleksyone">Pa gen videyo ki seleksyone</string>
+    <string name="plod_videyo">òplod videyo</string>
+    <string name="chwazi_kategori_film_nan">Chwazi kategori film nan :</string>
+</resources>

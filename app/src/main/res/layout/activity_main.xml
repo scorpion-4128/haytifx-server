@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/plan_1"
+    android:background="@color/dark"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/chwazi_kategori_film_nan"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/grey"
+            android:id="@+id/seclect_video_layout"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openVideoFiles"
+                android:textSize="16sp"
+                android:background="@color/colorAccent"
+                android:text="@string/plod_videyo">
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/pa_gen_videyo_ki_seleksyone"
+                android:textColor="@color/white1"
+                android:id="@+id/txtViewSongFileSelected"
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/movies_description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Deskripsyon film nan"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white1"
+            android:textColorLink="@color/white" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonupload"
+            android:layout_marginTop="20dp"
+            android:text="òplod"
+            android:background="@color/colorAccent"
+            android:onClick="uploadfileToFirebase"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_marginTop="290dp"
+        android:background="@color/dark">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="115dp"
+            android:src="@drawable/admin" />
+
+        <TextView
+            android:id="@+id/emmanuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="Byenvini ADMIN Emmanuel !"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
